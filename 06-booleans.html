@@ -36,6 +36,36 @@
         console.log('You cannot drive');
       } /* else statement is optional
        using the else-if we can add many conditions to an if statement */
-    </script>
+      
+       /*LOGICAL OPERATORS*/
+       console.log(true && true);/* AND op true if both true */
+
+       console.log(true || false ); /* Or po at-least one or both should be true*/
+
+       console.log(!true); /*flips the result into opposite */
+
+       /*Truthy === >0 & falsy === 0, '', null, NaN, undefined*/
+
+       if(0) {
+        console.log('truthy');
+       }
+
+       const cartQuantity = 6;
+
+       if(cartQuantity){
+        console.log('cart has products');
+       }
+
+       const result = true ? 'truthy':'falsy'; 
+       
+       const message = 5 && 'hello'
+       console.log(message);
+
+       const currency = 'EUR/undefined' || 'USD';
+       console.log(currency);
+
+
+       /*this is a shortcut for if-else statement*/    
+       </script>
   </body>
 </html>
