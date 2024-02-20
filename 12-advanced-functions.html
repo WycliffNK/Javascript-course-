@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced functions</title>
+  </head>
+  <body>
+
+    <button onclick="" class="js-button">Click</button>
+    <script>
+
+      const buttonElement = document.querySelector('.js-button');
+
+      const eventListener = ()=>{
+        console.log('click')
+      }
+
+      buttonElement.addEventListener('click', eventListener);
+
+      buttonElement.removeEventListener('click', eventListener)
+
+      buttonElement.addEventListener('click', ()=>{
+        console.log('click2');
+      });
+      /*
+      // functions are value.
+      function greeting(){
+        console.log('Hello');
+      }
+      greeting();
+
+      // func can be saved it in a variable
+      const num = 2;
+      const function1 = function(){
+        console.log('Hello2');
+      };
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+
+      // can be saved in an object
+      const object1 = {
+        num: 2,
+        fun: function() {
+          console.log('Hello3');
+        }
+      };
+      object1.fun();
+
+      // passing a func as parameter in a function
+      function display(param){
+        console.log(param);
+      }
+      display(2);
+
+      function run(param){
+        param();
+      }
+      run(function(){
+        console.log('Hello4');
+      });
+      */
+
+      //run code in the future
+      /*setTimeout(function(){
+        console.log('Timeout');
+        console.log('Timeout2');
+      }, 3000);
+
+      console.log('next line');
+
+      setInterval(function(){
+        console.log('interval', 3000);
+      });
+
+      console.log('next line 2');
+      */
+     /*
+     [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+     ].forEach((value, index) => {
+      if(value === 'wash dishes'){
+        return;
+      };
+
+      console.log(index);
+      console.log(value);
+     });
+
+
+     const regularFunction = function(param, param2){
+      console.log('Hello');
+      return 5;
+     }
+
+
+     const arrowFunction = (param, param2) => {
+      console.log('Hello');
+      return 5;
+     }
+     arrowFunction();
+
+     const oneParam = param=>{
+      console.log(param + 1);
+     };
+     oneParam(2);
+
+     const oneLine = ()=> 2+3;
+     console.log(oneLine());
+
+     const object2 = {
+      method: ()=>{
+
+      },
+      method() {
+        // same as up
+      }
+     }
+     */
+    </script>
+  </body>  
+</html>
